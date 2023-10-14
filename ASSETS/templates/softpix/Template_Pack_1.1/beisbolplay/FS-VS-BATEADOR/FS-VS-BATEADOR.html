@@ -1,0 +1,129 @@
+<head>
+
+  <!-- Global styling -->
+  <link rel="stylesheet" type="text/css" href="../_css/styles.css">
+  <link rel="stylesheet" type="text/css" href="../_css/colors.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <!-- Template specific styling -->
+  <script type="text/javascript" src="../../js/spx_interface.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../css/spx_layout.css" />
+  <link rel="stylesheet" type="text/css" href="../../css/spx_fonts.css" />
+ 
+
+  <link
+  rel="stylesheet"
+  type="text/css"
+  id="DynamicTheme"
+  href="styles.css"
+/>
+
+  <script>
+    
+    // Template settings
+    var dev = false,
+    gotVideo = false,
+    gotImage = false,
+    gotLoop = false,
+    gotWipe = false,
+    gotContent = true,
+    fadeIn = true,
+    fadeOut = false;
+
+  </script>
+
+<script type="text/javascript">
+  window.SPXGCTemplateDefinition = {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "29",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "1",
+      "DataFields": [
+          {
+              "field" : "comment",
+              "ftype" : "textfield",
+              "title" : "FS-VS-BATEADOR",
+              "value" : "FS-VS-BATEADOR"
+          },
+          
+          
+          
+          
+          
+
+      ]
+  };
+
+  
+</script>
+
+
+</head>
+<body>
+<div id="container">
+  <video muted loop id="fondo-a">
+    <source src="../_media/fondo-vs.webm" type="video/webm">
+  </video>
+  <div class="wrap-radio" id="content-container">
+    <div class="graphicBox duelo" id="box">
+      <div class="player-pic">
+        <div class="picture-player" id="pic-player-1"></div>
+        <div class="row-player" id="bx-player-1">
+          <div class="team"><img src=""></div>
+          <div class="name">
+            <span class="nombre"></span><br />
+          </div>
+        </div>
+      </div>
+      <div class="tabla-info light">
+        <table>
+          <tbody>
+            <tr>
+              <td class="avg-1">00</td>
+              <td class="avg-2">00</td>
+            </tr>
+            <tr>
+              <td class="hr-1">00</td>
+              <td class="hr-2">00</td>
+            </tr>
+            <tr>
+              <td class="ci-1">00</td>
+              <td class="ci-2">00</td>
+            </tr>
+            <tr>
+              <td class="ops-1">00</td>
+              <td class="ops-2">00</td>
+            </tr>
+            <tr>
+              <td class="slg-1">00</td>
+              <td class="slg-2">00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="player-pic">
+        <div class="picture-player" id="pic-player-2"></div>
+        <div class="row-player" id="bx-player-2">
+          <div class="team"><img src=""></div>
+          <div class="name">
+            <span class="nombre"></span><br />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script src="../_js/jquery-3.0.0.min.js"></script>
+
+  <!-- ### RUNDOWN ### -->
+  <script src="rundown.js"></script>
+  <script src="get_data.js"></script>
+
+</body>

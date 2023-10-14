@@ -1,0 +1,30 @@
+.duelo{ width:1920; height:1080px; top: -1080px; left:0px;display:flex; background-image:url('../_images/bg-box-vt.png'); position:absolute; 
+z-index: 1}
+.player-pic{width: 425px;margin-top: 162px; margin-left: 164px;}
+.picture-player{ width: 425px; height: 865px; background-position: 0px -3px;-webkit-box-shadow: inset 0px -10px 11px -8px rgba(0,0,0,0.7);
+-moz-box-shadow: inset 0px -10px 11px -8px rgba(0,0,0,0.7);
+box-shadow: inset 0px -10px 11px -8px rgba(0,0,0,0.7); overflow: hidden;}
+.picture-player img{ width:auto; height:100%; }
+.player-pic:last-child{margin-left: 0px;}
+.tabla-info{ width:740px;margin-top:283px; color:#fff; }
+.tabla-info table{width: 100%;}
+.tabla-info tr{ height: 145px;}
+.tabla-info td{ color:#fff; font-size:72px; text-align: center;padding-left: 40px;}
+.tabla-info td:nth-child(2){ padding-left:130px; }
+.duelop{ background-repeat:no-repeat; }
+.row-player{ height:95px; display:flex;margin: 0px 8px 0px 6px; }
+#bx-player-2{margin: 0px 2px 0px 11px;}
+.row-player .team{ padding: 15px 0px;  width: 100px; text-align: center;}
+.row-player .name{ width:310px;font-size:2rem; line-height:6rem; color:#fff; }
+.row-player .name span.equipo{ font-size:1.5rem; }
+
+#fondo-a{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+.wrap-radio{}

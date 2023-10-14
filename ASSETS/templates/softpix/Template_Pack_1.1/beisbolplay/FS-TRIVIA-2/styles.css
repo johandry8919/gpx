@@ -1,0 +1,36 @@
+body{ font-family: 'Oswald', sans-serif;}
+.trivia{width: 1920px; height: 1080px; position: absolute; top: -2500px; left: 0px; flex-wrap: wrap;}
+.wrap-trivia{ width:1571px; height: 942px; background-image: url('../_images/bg-items-trivia.png'); position: absolute; top: 105px; left: 175px; display: flex; justify-content: center;}
+.foto{ width: 639px; height: 928px;overflow:hidden; display: none;}
+.info{ width:860px; display:flex; color:#fff; flex-direction:column; position:relative; }
+.headline{font-size: 2.6rem; width: 790px;color:#fff; text-align: center; height: 140px;padding-left: 20px;line-height: 2.6rem; padding-top: 30px;display:none; background-color: #0F131E; margin-top: 180px;}
+.respuesta{ width:790px; height:75px; padding-left:50px; font-size: 2.2rem; margin-top:30px; opacity: 0;background-color: #0F131E;    display: flex;
+    align-items: center;}
+.bg {
+	width: 1920px;
+	height: 1080px;
+  left:0;
+  position:absolute;
+  top:0;
+  z-index:-1;
+  animation: scroll 90s linear infinite;
+  background: url("../_images/bg-boxes-t.jpg"), #111111 no-repeat;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  
+}
+.logo{ position:absolute; top: -60px;
+    left: 50%;
+    margin-left: -289px; }
+@keyframes scroll {
+   100%{
+    background-position:-3000px 0px;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .bg{
+    animation: scroll 300s linear infinite;
+  }
+}
+.bold{font-weight: 600; }

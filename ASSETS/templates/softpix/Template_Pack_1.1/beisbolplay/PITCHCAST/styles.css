@@ -1,0 +1,5 @@
+body{ font-family: 'Oswald', sans-serif;}
+.pitchcast{background: url('img/bg_box_pc.png'); background-blend-mode: multiply; position: absolute; width: 310px; height: 497px; right: -400px; bottom: 55px;}
+#track{ width: 95px; height: 120px; position: absolute; top: 154px; left: 109; background-color: rgba(255,255,255,0.3)}
+#dot{ width: 10px; height: 10px; border-radius: 10px; background-color: #ffff00; position: absolute; bottom: 0; left: 50%;  opacity: 0;}
+#speed{font-weight: 600; width: 100%; top: 390px; color:#fff; font-size:2rem; position: absolute; text-align: center; opacity: 0;}

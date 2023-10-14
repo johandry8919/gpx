@@ -1,0 +1,19 @@
+.graphicBox{ width:0px; height:815px; background-image:url('../_images/bg-box-abridor.png'); left: 155px; top:135px; display: flex; flex-direction: column; background-repeat: no-repeat;}
+.graphicBox .subtitle{z-index: 999; position: absolute; top: 5px;font-size: 1.8rem;width: 90%; color: #fff; text-align: left; text-transform: uppercase;}
+.graphicBox .subtitle-1{ left: 330px; width: 60%;}
+.graphicBox .subtitle-2{ left: 50px;width: 80%;}
+.graphicBox .headline{font-size: 3.4rem; width: 90%; top: 45px; color:#fff;text-align:left;  }
+.headline.h-l{ width: 490px; }
+.headline.h-r{ left: 50px; }
+.second-bx{width: 490px; display: flex; flex-direction: column;}
+.playerbox{width: 0px; height: 141px; background-image: url('../_images/bg-box-player.png'); background-repeat: no-repeat;}
+.hostbox{width: 0px; height: 140px; background-image: url('../_images/bg-box-host.png'); background-repeat: no-repeat;}
+#info-player{ width:640px; height:145px; display:flex; margin-left: 7px;}
+.team-logo{ padding:12px 25px 0px 35px; }
+.team-name{ padding:5px 0px 0px 10px; color:#fff; font-size: 3.2rem; letter-spacing: 4px; width:490px;  height: 70px;}
+
+.data-player{ width:664px;color:#fff; font-size:2rem;padding: 30px 60px; }
+.data-player table{ width:520px; }
+.data-player tr{ height:115px; }
+.data-player .op, .data-player .value{ font-size:3rem; color:#fff; width:50%; }
+ .data-player .value{ text-align:right; }

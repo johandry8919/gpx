@@ -1,0 +1,111 @@
+<head>
+
+  <!-- Global styling -->
+  <link rel="stylesheet" type="text/css" href="../_css/styles.css">
+  <link rel="stylesheet" type="text/css" href="../_css/fonts.css">
+  <link rel="stylesheet" type="text/css" href="../_css/colors.css">
+
+  <!-- Template specific styling -->
+  <script type="text/javascript" src="../../js/spx_interface.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../css/spx_layout.css" />
+  <link rel="stylesheet" type="text/css" href="../../css/spx_fonts.css" />
+ 
+
+  <link
+  rel="stylesheet"
+  type="text/css"
+  id="DynamicTheme"
+  href="styles.css"
+/>
+
+
+</script>
+<script type="text/javascript">
+ window.SPXGCTemplateDefinition = {
+     "description": "",
+     "playserver": "OVERLAY",
+     "playchannel": "9",
+     "playlayer": "9",
+     "webplayout": "9",
+     "out": "manual",
+     "dataformat": "json",
+     "uicolor": "9",
+     "DataFields": [
+         {
+             "field" : "comment",
+             "ftype" : "textfield",
+             "title" : "GO-ABRIDOR",
+             "value" : "GO-ABRIDOR"
+         },
+         
+         
+         
+         
+        
+     ]
+ };
+
+ 
+</script>
+
+  <script>
+    
+    // Template settings
+    var dev = false,
+    gotVideo = false,
+    gotImage = false,
+    gotLoop = false,
+    gotWipe = false,
+    gotContent = true,
+    fadeIn = true,
+    fadeOut = false;
+
+  </script>
+
+</head>
+<body>
+<div id="container">
+  <div class="wrap-radio" id="content-container">
+    <div class="graphicBox" id="box-left">
+      <div id="info-player">
+        <div class="team-logo" id="teamLogo"><img src=""></div>
+        <div class="second-bx">
+          <div class="team-name bold" id="player"></div>
+          <div class="headline h-l regular" id="teamName"></div>
+        </div>
+      </div>
+       <div class="data-player">
+        <table>
+          <tr>
+            <td class="op bold">G/P</td>
+            <td class="value regular">00</td>
+          </tr>
+          <tr>
+            <td class="op bold">IL</td>
+            <td class="value regular">00</td>
+          </tr>
+          <tr>
+            <td class="op bold">CL</td>
+            <td class="value regular">00</td>
+          </tr>
+          <tr>
+            <td class="op bold">K</td>
+            <td class="value regular">00</td>
+          </tr>
+          <tr>
+            <td class="op bold">EFEC</td>
+            <td class="value regular">00</td>
+          </tr>
+        </table>
+       </div> 
+    </div>
+  </div>
+</div>
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script src="../_js/jquery-3.0.0.min.js"></script>
+
+  <!-- ### RUNDOWN ### -->
+  <script src="rundown.js"></script>
+  <script src="get_data.js"></script>
+
+</body>

@@ -1,0 +1,12 @@
+.double{ width:0px; height:268px; bottom:85px; left:250px; display:flex;background-image:url('../_images/bg-probs.png'); background-repeat: no-repeat; }
+.info-player{ width:300px; }
+.row-player{ height:92px; display:flex; width:300px; }
+.row-player .team{ padding: 15px 0px;  width: 125px; text-align: center;  margin-right: 30px;}
+.row-player .name{ font-size:3.8rem; line-height:6rem; color:#fff; }
+.data-player{ width:880px; height:225px; }
+.data-player table{color: #fff; font-size:3.5rem; padding: 0px 60px; width: 1090px;}
+.data-player thead{ font-size:2rem; }
+.data-player tbody th{padding:10px 10px 0px 10px; width: 110px; text-align: center;}
+.wrap-box{ width:700px; display:flex; padding-top:42px; height: 186px;}
+.data-player tbody th.hg, .data-player tbody th span{ color:#17CE66; }
+.sponsor-wrap{height: 45px; position: absolute; bottom: 0px; left: 40%;display: none; }

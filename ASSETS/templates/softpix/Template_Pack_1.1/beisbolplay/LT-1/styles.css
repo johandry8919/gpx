@@ -1,0 +1,2 @@
+.graphicBox{ background-image:url('../_images/bg-lowerThird-largo.png') ; background-repeat: no-repeat;width: 0px; height: 190px; left: 340px; bottom: 80px;justify-content: center; align-items: center; display: flex;}
+.graphicBox .headline{z-index: 999; font-size: 2.5rem; width: 1135px; color:#fff; display:none; text-align: center; margin-top: -25px;}

@@ -1,0 +1,25 @@
+.bottom-bar{ width:1920px;background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 30%, rgba(238,238,238,1) 70%); height:90px; -webkit-box-shadow: inset 0px 0px 15px -1px rgba(0,0,0,0.3);
+-moz-box-shadow: inset 0px 0px 15px -1px rgba(0,0,0,0.3);
+box-shadow: inset 0px 0px 15px -1px rgba(0,0,0,0.3); border:4px solid #fff; display:flex;  position: absolute; bottom: -200px;}
+.other-games{overflow:hidden; position: relative; width: 100%; height: 100px;}
+.slide-track {
+    animation: slider 60s linear infinite; 
+    display: flex; width: calc(370px * 10);
+  }
+  @keyframes slider {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-320px * 10))}
+}
+.item-game { display: flex; padding: 10px 10px 0px 10px; color: #333; width: 370px; justify-content: space-around; align-items: center;border-right-width: 3px; border-right-style: solid; border-image: linear-gradient(0, #d9d9d9, #fff, #d9d9d9) 1;  position: relative; height: 80px;}
+.team-r {display: flex; align-items: center; width: 110px; justify-content: center;}
+.team-r .pic-game{ width:45px; height: 45px}
+.team-r .pic-game img{ width:auto; height:100%; max-width:100%; }
+.score-game {
+    width: 120px; font-size: 4rem; }
+.score-game .labelcode{ font-size:24px;  position:absolute; top:0px; left:50%; margin-left:-50px; width:100px; text-align:center; }
+.score-game .labelcode.live{color:#ff0000;}
+.name-game {
+    font-size: 1.2rem;
+    padding: 0px 10px;
+}

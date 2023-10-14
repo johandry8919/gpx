@@ -1,0 +1,10 @@
+.insert{ width:0px; height:125px; bottom:80px; background-image: url('../_images/bg-host.png'); left: 50%; margin-left: -325px;}
+.graphicBox img{ z-index:0; clip-path: polygon(94% 0%, 100% 4%, 100% 100%, 6% 100%, 0 68%, 0 0);}
+.graphicBox .subtitle{z-index: 999; position: absolute; top: 2px;font-size: 1.7rem;width: 90%; color: #fff; display: none; text-transform: uppercase;}
+.graphicBox .subtitle-1{ left: 50px; text-align: left; }
+.graphicBox .subtitle-2{right: 50px; text-align: right;}
+.graphicBox .headline{z-index: 999; position: absolute; font-size: 2.7rem; width: 90%; top: 45px; color:#fff; display:none; }
+.headline.h-l{text-align:left; left: 50px;}
+.headline.h-r{ text-align:right; right:40px; }
+
+

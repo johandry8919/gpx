@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+.container {
+  position: absolute;
+  transform-origin: bottom left;
+  border: 0px;
+  display: inline-block;
+  left: 2.2vw;
+  bottom: 100px;
+  z-index: 10;
+  padding: 0;
+  opacity: 0;
+  width: 0;
+  height: 75px;
+  color: white;
+  font-weight: bold;
+  padding-top: 95px;
+  overflow: hidden;
+
+}
+
+.bg_lowerThird {
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  position: relative;
+  bottom: 0;
+  overflow: hidden;
+  height: 90px;
+  background-image: url('../bg_lowerThird_marcadores.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.homeclub {
+  width: 470px;
+  height: 100px;
+  flex-direction: column;
+  display: flex;
+  position: absolute;
+  top: 18px;
+  left: 0;
+  z-index: 0;
+
+
+}
+
+.homeclub .lanzador {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  opacity: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-left: rgb(119, 119, 119) 6px solid;
+}
+
+.homeclub .peloteros {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  opacity: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-left: rgb(119, 119, 119) 6px solid;
+}
+
+.homeclub div {
+  font-size: 2em;
+  line-height: 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+
+}
+
+
+
+.bg_lowerThird .carreras {
+  position: absolute;
+  left: 5px;
+  width: 230px;
+  height: 55px;
+  bottom: 13px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.equipos {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 50px;
+  width: 270px;
+  margin-left: 0px;
+  font-size: 2em;
+
+
+
+}
+
+.equipos .equipos1 p {
+  margin-left: 40px;
+
+
+
+}
+
+.equipos .equipos2 {
+  margin-left: 40px;
+
+
+}
+
+.bases {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  left: 24%;
+  height: 70px;
+  width: 75px;
+  top: 3px;
+  box-sizing: border-box;
+
+}
+
+.bases div {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  transform: rotate(-45deg);
+}
+
+.bases div:nth-child(1) {
+  left: 45px;
+  top: 35px;
+}
+
+.bases div:nth-child(2) {
+  left: 23px;
+  top: 12px;
+}
+
+.bases div:nth-child(3) {
+  left: 2px;
+  top: 33px;
+}
+
+
+.inning-strikes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  left: 30%;
+  height: 54px;
+  width: 218px;
+  top: 19px;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-size: 25px;
+
+
+}
+
+.inning-strikes div:nth-child(1) {
+  margin-left: 30px;
+}
+
+.inning-strikes div:nth-child(2) {
+  margin-left: 9px;
+}
+
+.inning-strikes div:nth-child(3) {
+  margin-left: 80px;
+}
+
+
+
+.triangle.up {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 12px solid rgb(200, 255, 0);
+}
+.outs {
+  position: absolute;
+  width: 50px;
+  left: 38.5%;
+  top: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.outs div {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border: solid 3px rgb(107, 107, 107);
+  margin-left: 2px;
+}
+
+
+
+.outs2.activate {
+  
+ background-color: yellow;
+}

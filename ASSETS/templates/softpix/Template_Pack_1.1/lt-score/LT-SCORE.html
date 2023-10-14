@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>lt-score</title>
+
+  <script type="text/javascript" src="../js/lib/gsap3.2.6.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script type="text/javascript" src="../js/spx_interface.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+
+  <link rel="stylesheet" type="text/css" id="DynamicTheme" href="themes/styles.css" />
+
+  <script type="text/javascript">
+    window.SPXGCTemplateDefinition = {
+      "description": "LT-SCORE",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "3",
+      "webplayout": "3",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "3",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "LT-SCORE",
+          "value": "[LT-SCORE]"
+        },
+        {
+          "ftype": "instruction",
+          "value": "LT-SCORE."
+        },
+
+        {
+          "field": "f99",
+          "ftype": "filelist",
+          "title": "Visual theme",
+          "assetfolder": "./themes/",
+          "extension": "css",
+          "value": "./themes/styles.css",
+        }
+      ]
+    };
+  </script>
+</head>
+
+<body>
+  <div class="SPXWindow SPX_AUTOSIZE" data-spx-remember="Use either SPX_AUTOSIZE or SPX_FIXSIZE">
+    <div id="TG" class="container SKEW LEFTELEMENTS">
+
+      <div class="line1 color1 accentRight region fleft">
+        <div id="club" class="homeclub">
+          
+          <div id="boxscore1" class="lanzador">
+            <p id="f0_gfx">j.rojas melendex</p>
+            <span id="numeroLanzamiento"></span>
+          </div>
+
+          <div id="visitante" class="peloteros">
+            <p id="f1_gfx">j.rojas melendex</p>
+            <span id="ave"></span>
+
+          </div>
+        </div>
+
+        <div style="z-index: 1000;" id="line1" class="bg_lowerThird">
+
+          <div class="carreras">
+            <div id="fondoLogo1" class="equipos equipos1">
+              <img id="id_equipo_homeclub" width="60px" src="" alt="">
+              <p id="carreras_homeclub" style="margin-left: 10px;">0</p>
+
+            </div>
+            <div id="fondoLogo2" class="equipos equipos2">
+              <img id="id_equipo_visitante" width="60px" src="" alt="">
+              <p id="carreras_visitante" style="margin-left: 10px;">0</p>
+            </div>
+          </div>
+
+          <div class="bases">
+            <div id="hombre_primera"></div>
+            <div id="hombre_segunda"></div>
+            <div id="hombre_tercera"></div>
+          </div>
+
+           <!--outs-->
+          <div class="outs">
+            <div class="outs1" id="outs1"></div>
+            <div class="outs2" id="outs2"></div>
+          </div>
+          <!--outs-->
+
+          <div class="inning-strikes">
+            <div id="triangle" class="triangle"></div>
+            <div><p id="inning" class="inning">9</p></div>
+            <div><p id="strikes" class="strikes">2-3</p></div>
+          </div>
+          <div class="template"></div>
+        </div>
+
+
+      </div>
+
+    </div>
+    <div style="opacity:0;" id="f99"></div>
+  </div data-info="SPXWindow ends">
+  <script type="text/javascript" src="js/temStyles.js"></script>
+  <script type="text/javascript" src="js/animaciones.js"></script>
+  <script type="text/javascript" src="js/api.js"></script>
+
+</body>
+
+</html>

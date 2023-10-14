@@ -1,0 +1,536 @@
+{
+  "templates": [
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "3",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "BATEADOR-FULL",
+          "value": "BATEADOR-FULL"
+        },
+        {
+          "field": "f0",
+          "ftype": "textfield",
+          "title": "Texto dinamico",
+          "value": "hoy 5-3 / 2 hr / h / k / 4 ci "
+        }
+      ],
+      "onair": "false",
+      "imported": "1696291158871",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/BANNER-BATEADORS/BANNER-BATEADOR-FULL.html"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "3",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "BANNER-BATEADOR-SHORT-PRIMER-TURNO",
+          "value": "BANNER-BATEADOR-SHORT-PRIMER-TURNO"
+        },
+        {
+          "field": "f0",
+          "ftype": "textfield",
+          "title": "Texto dinamico",
+          "value": "PRIMER TURNO AL BATE"
+        },
+        {
+          "field": "f3",
+          "ftype": "filelist",
+          "title": "Elija la imagen del patrocinador",
+          "assetfolder": "/media/images/bg/",
+          "extension": "png",
+          "value": "none"
+        }
+      ],
+      "onair": "false",
+      "imported": "1696291158977",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/BANNER-BATEADORS/BANNER-BATEADOR-SHORT-PRIMER-TURNO.html"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "3",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "BATEADOR-SHORT-HOY",
+          "value": "BATEADOR-SHORT-HOY"
+        }
+      ],
+      "onair": "false",
+      "imported": "1696291159058",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/BANNER-BATEADORS/BATEADOR-SHORT-HOY.html"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "3",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "BX-LANZADOR-ABRIDOR",
+          "value": "BX-LANZADOR-ABRIDOR"
+        },
+        {
+          "field": "f3",
+          "ftype": "filelist",
+          "title": "Elija la imagen del patrocinador",
+          "assetfolder": "/media/images/bg/",
+          "extension": "png",
+          "value": "none"
+        }
+      ],
+      "onair": "false",
+      "imported": "1696291173627",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/BOX-LANZADOR-ABRIDOR/BOX-LANZADOR ABRIDOR.html"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "3",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "BX-LANZADOR-RELEVISTA",
+          "value": "BX-LANZADOR-RELEVISTA"
+        },
+        {
+          "field": "f3",
+          "ftype": "filelist",
+          "title": "Elija la imagen del patrocinador",
+          "assetfolder": "/media/images/bg/",
+          "extension": "png",
+          "value": "none"
+        }
+      ],
+      "onair": "false",
+      "imported": "1696291180711",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/BOX-LANZADOR-RELEVISTA/BX-LANZADOR-RELEVISTA.html"
+    },
+    {
+      "description": "bx-score left",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "5",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "7",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "bg-box-marcadores",
+          "value": "bg-box-marcadores"
+        },
+        {
+          "ftype": "instruction",
+          "value": "bx-score"
+        }
+      ],
+      "onair": "false",
+      "imported": "1696291188938",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/BOX-MARCADOR/BOX-MARCADOR.html"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "3",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "BOX-SCORE-FINAL-A",
+          "value": "BOX-SCORE-FINAL-A"
+        }
+      ],
+      "onair": "false",
+      "imported": "1696291197932",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/BOX-SCORE-FINAL-A/BOX-SCORE-FINAL-A.html"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "3",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "BOX-SCORE-FINAL-B",
+          "value": "BOX-SCORE-FINAL-B"
+        }
+      ],
+      "onair": "false",
+      "imported": "1696291207167",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/BOX-SCORE-FINAL-B/BOX-SCORE-FINAL-B.html"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "3",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "BOX SCORE INNING",
+          "value": "BOX SCORE INNING"
+        },
+        {
+          "field": "f0",
+          "ftype": "textfield",
+          "title": "Texto dinamico",
+          "value": "MITAD DEL SEGUNDO"
+        },
+        {
+          "field": "f3",
+          "ftype": "filelist",
+          "title": "Elija la imagen del patrocinador",
+          "assetfolder": "/media/images/bg/",
+          "extension": "png",
+          "value": "none"
+        }
+      ],
+      "onair": "false",
+      "imported": "1696291214271",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/BOX-SCORE-INNING/BOX-SCORE-INNING.html"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "3",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "GRAFICO11",
+          "value": "GRAFICO11"
+        },
+        {
+          "field": "f3",
+          "ftype": "filelist",
+          "title": "Elija la imagen del patrocinador",
+          "assetfolder": "/media/images/bg/",
+          "extension": "png",
+          "value": "none"
+        }
+      ],
+      "onair": "false",
+      "imported": "1696291224476",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/GRAFICO11/GRAFICO11.html"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "3",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "GRAFICO12",
+          "value": "GRAFICO12"
+        },
+        {
+          "field": "f3",
+          "ftype": "filelist",
+          "title": "Elija la imagen del patrocinador",
+          "assetfolder": "/media/images/bg/",
+          "extension": "png",
+          "value": "none"
+        }
+      ],
+      "onair": "false",
+      "imported": "1696291234294",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/GRAFICO12/GRAFICO12.html"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "3",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "GRAFICO13",
+          "value": "GRAFICO13"
+        },
+        {
+          "field": "f3",
+          "ftype": "filelist",
+          "title": "Elija la imagen del patrocinador",
+          "assetfolder": "/media/images/bg/",
+          "extension": "png",
+          "value": "none"
+        }
+      ],
+      "onair": "false",
+      "imported": "1696291243137",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/GRAFICO13/GRAFICO13.html"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "3",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "GRAFICO14",
+          "value": "GRAFICO14"
+        },
+        {
+          "field": "f3",
+          "ftype": "filelist",
+          "title": "Elija la imagen del patrocinador",
+          "assetfolder": "/media/images/bg/",
+          "extension": "png",
+          "value": "none"
+        }
+      ],
+      "onair": "false",
+      "imported": "1696291253577",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/GRAFICO14/GRAFICO14.html"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "3",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "GRAFICO15",
+          "value": "GRAFICO15"
+        },
+        {
+          "field": "f3",
+          "ftype": "filelist",
+          "title": "Elija la imagen del patrocinador",
+          "assetfolder": "/media/images/bg/",
+          "extension": "png",
+          "value": "none"
+        }
+      ],
+      "onair": "false",
+      "imported": "1696291261832",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/GRAFICO15/GRAFICO15.html"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "3",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "GRAFICO15",
+          "value": "GRAFICO15"
+        },
+        {
+          "field": "f3",
+          "ftype": "filelist",
+          "title": "Elija la imagen del patrocinador",
+          "assetfolder": "/media/images/bg/",
+          "extension": "png",
+          "value": "none"
+        }
+      ],
+      "onair": "false",
+      "imported": "1696291277623",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/GRAFICO15/GRAFICO15.html"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "3",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "GRAFICO16",
+          "value": "GRAFICO16"
+        },
+        {
+          "field": "f3",
+          "ftype": "filelist",
+          "title": "Elija la imagen del patrocinador",
+          "assetfolder": "/media/images/bg/",
+          "extension": "png",
+          "value": "none"
+        }
+      ],
+      "onair": "false",
+      "imported": "1696291289701",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/GRAFICO16/GRAFICO16.html"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "3",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "GRAFICO16",
+          "value": "GRAFICO16"
+        },
+        {
+          "field": "f3",
+          "ftype": "filelist",
+          "title": "Elija la imagen del patrocinador",
+          "assetfolder": "/media/images/bg/",
+          "extension": "png",
+          "value": "none"
+        }
+      ],
+      "onair": "false",
+      "imported": "1696291298722",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/GRAFICO16/GRAFICO16.html"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "1",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "lt-antesala",
+          "value": "lt-antesala"
+        }
+      ],
+      "onair": "false",
+      "imported": "1696291307796",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/TL-ANTESALA/lt-antesala.html"
+    },
+    {
+      "description": "LT-SCORE",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "3",
+      "webplayout": "3",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "3",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "LT-SCORE",
+          "value": "[LT-SCORE]"
+        },
+        {
+          "ftype": "instruction",
+          "value": "LT-SCORE."
+        },
+        {
+          "field": "f99",
+          "ftype": "filelist",
+          "title": "Visual theme",
+          "assetfolder": "./themes/",
+          "extension": "css",
+          "value": "./themes/styles.css"
+        }
+      ],
+      "onair": "false",
+      "imported": "1696344641532",
+      "relpath": "/softpix/Template_Pack_1.1/lt-score/LT-SCORE.html"
+    }
+  ],
+  "warning": "Modifications done in the SPX will overwrite this file.",
+  "copyright": "(c) 2020-2023 Softpix (https://spx.graphics)",
+  "updated": "2023-10-03T14:50:41.604Z"
+}

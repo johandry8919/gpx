@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>INFOLEFT</title>
+    <script type="text/javascript" src="js/gsap3.2.6.min.js"></script>
+    <script type="text/javascript" src="../js/spx_interface.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/spx_layout.css" />
+    <link rel="stylesheet" type="text/css" href="../css/spx_fonts.css" />
+    <link rel="stylesheet" type="text/css" id="DynamicTheme" href="themes/styles.css" />
+
+    <script>
+
+        function runTemplateUpdate() {
+            const SPREADSHEET_ID = '1jySc-VsQZKv-MU2RjS_C-pMYweoh7PV-kf1z2rbyDak';
+            const SHEETS_API = 'https://sheets.googleapis.com/v4/spreadsheets/';
+            const API_KEY = 'AIzaSyBRYaICc8ckdInbL0JuotA-nXGM-gA-z7I';
+            let valueData = [];
+
+            fetch(`${SHEETS_API}${SPREADSHEET_ID}?key=${API_KEY}`)
+                .then(response => response.json())
+                .then(data => {
+                    const sheets = data.sheets;
+
+                    for (let sheet of sheets) {
+                        const sheetName = sheet.properties.title;
+
+                        if (sheetName === 'LT') {
+                            return fetch(`${SHEETS_API}${SPREADSHEET_ID}/values/${sheetName}?key=${API_KEY}`);
+                        }
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    const valuesOrigen = data.values;
+                    
+                    valuesOrigen[0].map((value, key) => {
+                        valueData[value] = [];
+                        valuesOrigen.map((v, k) => {
+                            if (k > 0) {
+                                valueData[value].push(v[key]);
+                            }
+                        });
+                    });
+
+                    
+                    e('DynamicTheme').href = e('f99').innerText;
+                    valor = e('f0').innerText;
+                   
+                    if(e('f0').innerText){
+                        e('f0_gfx').innerHTML = valueData['VALOR'][valor];
+                        
+                    }else if(e('f2').innerText){
+                        e('f0_gfx').innerHTML = htmlDecode(e('f2').innerText);
+
+                    }else if(valor == 'null'){console.log(valor)}
+                   
+                    gsap.set("#line1", { opacity: 0 });
+                    runAnimationIN();
+                })
+                .catch(error => console.error(error));
+                
+        }
+
+
+        function runAnimationIN() {
+            // console.log("runAnimationIN()");
+            let videoPath="";
+            let dur = 0.8;
+            let iconDIV = document.getElementById('icon');
+            let iconVAL = document.getElementById('f1').innerText;
+            videoPath = "img/" + iconVAL.trim() + ".webm";
+            if (iconVAL=='0' || iconVAL=='') {
+                // no icon
+                iconDIV.style.display='none';
+            } else {
+                // use icon
+                document.getElementById('f0').style.paddingLeft = '0.5rem'; // move text a bit closer to icon
+                // console.log('Setting icon video to ' + videoPath);
+                document.getElementById('loop').src = videoPath;
+                videoplayer  = document.getElementById('video');
+                setTimeout(function(){ videoplayer.load(); }, 10);
+                setTimeout(function(){ videoplayer.play(); }, 100);
+                iconDIV.style.display='inline-block';
+            }
+
+            if (window.top.spxRenderer && window.top.spxRenderer.fps) {
+                gsap.ticker.fps(window.top.spxRenderer.fps);    
+                console.log('spxRenderer: ' + window.top.spxRenderer.fps + ' FPS')
+            }
+
+            gsap.set("#TG", { opacity: 1 });
+            gsap.set("#line1", { opacity: 1 });
+            gsap.fromTo(
+                "#line1",
+                dur,
+                    {
+                        // start value
+                        width:0
+                    },
+                    {
+                        width:function(i, target)
+                            {
+                            target.style.width = "auto"; 
+                            var width = target.offsetWidth-3;
+                            target.style.width = "0px";
+                          
+                            return width;
+                            },
+                        ease: "back.out(2.0)"
+                    }
+                );
+            
+            gsap.fromTo("#f0_gfx", { opacity:  0 }, { delay: 0.1, duration: dur - 0.2, opacity  : 1, ease: "Power3.easeOut" });
+            gsap.fromTo("#f0_gfx", { x:     -200 }, { delay: 0.1, duration: dur - 0.1, x        : 0, ease: "back.out(2.0)" });
+            gsap.fromTo("#icon"  , { scale:  0 }, { delay: 0.0, duration: dur - 0.0, scale    : 1, ease: "Power3.easeOut" });
+        }
+
+        function runAnimationOUT() {
+            // console.log("runAnimationOUT()");
+            let dur = 0.7;
+            gsap.set("#line1", { delay: dur + 0.0, opacity: 0 });
+            gsap.set("#icon", { delay: dur + 0.0, opacity: 0 });
+            gsap.to("#line1",  { delay: 0.00, duration: dur + 0.00, width:    0, ease: "back.in(1.2)" });
+            gsap.to("#f0_gfx", { delay: 0.00, duration: dur + 0.00, x:     -100, ease: "back.in(1.2)" });
+            gsap.set("#TG",    { delay: dur - 0.0, opacity: 0 });
+            gsap.fromTo("#icon", { scale:  0 }, { delay: 0.0, duration: dur + 0.0, scale     : 0,   ease: "Power4.easeIn" });
+        }
+    </script>
+
+<script type="text/javascript">
+    window.SPXGCTemplateDefinition = {
+        "description": "",
+        "playserver": "OVERLAY",
+        "playchannel": "1",
+        "playlayer": "4",
+        "webplayout": "4",
+        "out": "manual",
+        "dataformat": "json",
+        "uicolor": "4",
+        "DataFields": [
+            {
+                "field" : "comment",
+                "ftype" : "textfield",
+                "title" : "LT-S",
+                "value" : "LT-S"
+            },
+            {
+                "ftype" : "instruction",
+                "value" : ""
+            },
+            {
+                "field" : "f0",
+                "ftype" : "dropdown",
+                "title" : "lista TL-S",
+                "items": [
+                    {
+                        "text": "Seleccione una opcion",
+                        "value": "null"
+                    },
+                    {
+                        "text": "TL-S-1",
+                        "value": "0"
+                    },
+                    {
+                        "text": "TL-S-2",
+                        "value": "1"
+                    },
+                    {
+                        "text": "TL-S-3",
+                        "value": "2"
+                    },
+                    {
+                        "text": "TL-S-4",
+                        "value": "2"
+                    }
+                   
+                ]
+             
+            },
+            {
+                "field" : "f2",
+                "ftype" : "textfield",
+                "title" : "Texto dinamico",
+                "value" : ""
+                
+             
+            },
+            
+            {
+                "field": "f99",
+                "ftype": "filelist",
+                "title": "Visual theme",
+                "assetfolder" : "./themes/" ,
+                "extension" : "css",
+                "value": "./themes/styles.css",
+            }  
+
+        ]
+    };
+</script>
+
+    <style>
+
+        .tgpos{
+            z-index: 10;
+            opacity:0;
+            position: absolute;
+            width: 100%;
+            bottom: 70px;
+            left: 0;
+            right: 0;
+            margin: 0;
+           
+        }
+
+        .icon{
+            position: absolute;
+            background-color: var(--spx-bgcol1-color);
+            left: 19%;
+            text-align: start;
+            
+    
+        }
+
+       
+
+       
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="SPXWindow SPX_AUTOSIZE" data-spx-remember="Use either SPX_AUTOSIZE or SPX_FIXSIZE">
+        <div id="TG" class="tgpos ">
+           
+            <div id="line1" class="line1">
+                <div id="icon"  class="icon ">
+                    <video id="video" width="10" height="10" style="width:100px;height:100%;" autoplay loop>
+                        <source id="loop" src="" type="video/webm">
+                       
+                    </video>
+                </div>
+                <div  class=" nowrap fright ANTISKEW" id="f0_gfx"></div>
+            </div>
+        </div>
+        <div  style="opacity:0;"  id="f0"></div>
+        <div style="opacity:0;"  id="f1"></div>
+        <div style="opacity:0;"  id="f2"></div>
+        <div style="opacity:0;"  id="f99"></div>
+    </div data-info="SPXWindow ends">
+
+</body>
+</html>

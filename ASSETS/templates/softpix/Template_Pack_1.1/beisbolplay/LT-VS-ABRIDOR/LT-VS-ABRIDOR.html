@@ -1,0 +1,121 @@
+<head>
+
+  <!-- Global styling -->
+  <link rel="stylesheet" type="text/css" href="../_css/styles.css">
+  <link rel="stylesheet" type="text/css" href="../_css/fonts.css">
+  <link rel="stylesheet" type="text/css" href="../_css/colors.css">
+
+  <!-- Template specific styling -->
+  <script type="text/javascript" src="../../js/spx_interface.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../css/spx_layout.css" />
+  <link rel="stylesheet" type="text/css" href="../../css/spx_fonts.css" />
+ 
+
+  <link
+  rel="stylesheet"
+  type="text/css"
+  id="DynamicTheme"
+  href="styles.css"
+/>
+
+
+  <script>
+    
+    // Template settings
+    var dev = false,
+    gotVideo = false,
+    gotImage = false,
+    gotLoop = false,
+    gotWipe = false,
+    gotContent = true,
+    fadeIn = true,
+    fadeOut = false;
+
+  </script>
+
+<script type="text/javascript">
+  window.SPXGCTemplateDefinition = {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "1",
+      "DataFields": [
+          {
+              "field" : "comment",
+              "ftype" : "textfield",
+              "title" : "LT-VS-ABRIDOR",
+              "value" : "LT-VS-ABRIDOR"
+          },
+          
+          
+          
+          
+          
+
+      ]
+  };
+
+  
+</script>
+
+</head>
+<body>
+<div id="container">
+  <div class="wrap-radio" id="content-container">
+    <div class="graphicBox double defense" id="box">
+      <div class="wrap-box">
+      <div class="info-player">
+        <div class="row-player" id="bx-player-1">
+          <div class="team"><img src=""></div>
+          <div class="name medium"></div>
+        </div>
+        <div class="row-player" id="bx-player-2">
+          <div class="team"><img src=""></div>
+          <div class="name medium"></div>
+        </div>
+      </div>
+      <div class="data-player medium">
+        <table>
+          <thead>
+            <tr class="regular">
+                <th>G/P</th>
+                <th>IL</th>
+                <th>CL</th>
+                <th>K</th>
+                <th>EFEC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <th id="bat-GP-A">0</th>
+                <th id="bat-IL-A">0</th>
+                <th id="bat-CL-A">0</th>
+                <th id="bat-K-A">0</th>
+                <th id="bat-EFEC-A">0</th>
+            </tr>
+            <tr>
+                <th id="bat-GP-B">0</th>
+                <th id="bat-IL-B">0</th>
+                <th id="bat-CL-B">0</th>
+                <th id="bat-K-B">0</th>
+                <th id="bat-EFEC-B">0</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script src="../_js/jquery-3.0.0.min.js"></script>
+
+  <!-- ### RUNDOWN ### -->
+  <script src="rundown.js"></script>
+  <script src="get_data.js"></script>
+
+</body>

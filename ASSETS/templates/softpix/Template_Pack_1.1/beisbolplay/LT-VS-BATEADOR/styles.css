@@ -1,0 +1,11 @@
+.double{ width:0px; height:225px; bottom:85px; left:110px; display:flex; }
+.info-player{ width:806px; margin-top: 43px; }
+.row-player{ height:91px; display:flex; }
+.row-player .team{ padding: 15px 0px;  width: 125px; text-align: center;  margin-right: 30px;}
+.row-player .name{ font-size:3.8rem; line-height:6rem; color:#fff; }
+.data-player{ width:880px; height:225px; background-image:url('../_images/bg-data.png'); }
+.data-player table{color: #fff; font-size:3.5rem; margin-left: 30px;}
+.data-player thead{ font-size:2rem; }
+.data-player th{ padding:0px 45px; }
+.data-player tbody th{padding-top: 10px;}
+.wrap-box{ width:1686px; display:flex; }

@@ -1,0 +1,16 @@
+.insert{ width:0px; height:115px; bottom:100px; filter: drop-shadow(6px 2px 3px rgba(50, 50, 0, 0.5));}
+.graphicBox.left{left: 85px; }
+.graphicBox.right{left: 1130px; }
+.graphicBox{bottom:100px; }
+.graphicBox .subtitle{z-index: 999; position: absolute; top: 5px;font-size: 1.8rem;width: 90%; color: #fff; text-align: left; text-transform: uppercase;}
+.graphicBox .subtitle-1{ left: 330px; width: 60%;}
+.graphicBox .subtitle-2{ left: 50px;width: 80%;}
+.graphicBox .headline{z-index: 999; position: absolute; font-size: 3.4rem; width: 90%; top: 45px; color:#fff;text-align:left; text-transform:uppercase; }
+.headline.h-l{ left: 330px;}
+.headline.h-r{ left: 50px; }
+
+.playerbox{width: 0px; height: 141px; background-image: url('../_images/bg-box-player.png'); background-repeat: no-repeat;}
+.hostbox{width: 0px; height: 140px; background-image: url('../_images/bg-box-host.png'); background-repeat: no-repeat;}
+#info-player{ width:270px; height:83px; position:absolute;top:39px; display:flex; }
+.team-logo{ padding:12px 25px 0px 35px; }
+.team-name{ padding:5px 0px 0px 10px; color:#fff; font-size: 4.2rem; letter-spacing: 4px; }

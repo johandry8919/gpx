@@ -1,0 +1,29 @@
+.graphicBox{ width:0px; height:1080px; left: 0px; top:0px; background-repeat: no-repeat;}
+.wrap-items-tt{color: #fff; display: flex; flex-direction: column; justify-content: space-around; height: 905px; width: 756px; background-image: url('../_images/box-titulares.png'); padding-bottom: 30px; position: absolute; top: 115px; left: -770px; align-items: center;}
+.item-titular{font-size: 2.3rem; line-height: 2.4rem; padding: 15px 30px; height: 100px; background-color: #0F131E; width: 85%; text-align: center; display: flex; justify-content: center;  align-items: center; opacity: 0; margin-left: 300px;}
+.headline{font-size: 2.6rem; padding: 15px 0px; margin-top: 140px; width: 80%; text-align: center;}
+.bg {
+	width: 640px;
+	height: 1080px;
+  left:0;
+  position:absolute;
+  top:0;
+  z-index:-1;
+  animation: scroll 90s linear infinite;
+  background: url("../_images/bg-boxes-t.jpg"), #111111 no-repeat;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  
+}
+.logo{ position:absolute; top:-300px; left:50%; margin-left:-127px; opacity:0; }
+@keyframes scroll {
+   100%{
+    background-position:-3000px 0px;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .bg{
+    animation: scroll 300s linear infinite;
+  }
+}
