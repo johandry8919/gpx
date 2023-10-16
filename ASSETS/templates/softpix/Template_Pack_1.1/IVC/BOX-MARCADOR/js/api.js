@@ -142,11 +142,10 @@ function runTemplateUpdate() {
                           });
                          
                         } if (parte === 1){
-                            const totalStrikesBolasFoul = lanzador_visitante_bolas + lanzador_visitante_foul + lanzador_visitante_strikes;
-                            numeroLanzamiento.innerText =   "L: " + totalStrikesBolasFoul;
+                            
                            
     
-                        
+
                             //data / boxscore / homeclub /lanzador 
                             homeclub_peloteros.forEach(element => {
                              if(element.id_pelotero == id_bateador_homeclub){
@@ -154,6 +153,8 @@ function runTemplateUpdate() {
                                 let apellido = element.apellido;
                                 const inicia = nombre.charAt(0);
                                 document.getElementById("f0_gfx").innerText = inicia + "." + " " + apellido;
+                                element.AVE == null ?  element.AVE = '0.00' : element.AVE
+                                 Ave.innerText = element.AVE;
                                
                              }
                  
@@ -163,10 +164,11 @@ function runTemplateUpdate() {
                             lanzadores_visitante.forEach(element => {
                             if(element.id_picher == id_lanzador_visitante){
                                 let nombres = element.nombre;
-                                Ave.innerText = element.AVE;
                                 let apellido = element.apellido;
                                 const inicia = nombres.charAt(0);
                                 document.getElementById("f1_gfx").innerText = inicia + "." + " " + apellido;
+                                const totalStrikesBolasFoul = lanzador_visitante_bolas + lanzador_visitante_foul + lanzador_visitante_strikes;
+                                 numeroLanzamiento.innerText =   "L: " + totalStrikesBolasFoul;
                                
     
                             }

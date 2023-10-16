@@ -15,7 +15,7 @@ function runTemplateUpdate() {
   
    }
    const zoomableDivs = document.querySelectorAll('.text-cente, .logo , .cont-center');
-      const videoElement = document.getElementById("video");
+    const videoElement = document.getElementById("video");
   
       // Crea y configura el elemento source una sola vez
       const sourceElement = document.createElement("source");
@@ -26,7 +26,7 @@ function runTemplateUpdate() {
   
   
   
-      const video = document.getElementById('video');
+    const video = document.getElementById('video');
     
   
   video.addEventListener('play', () => {

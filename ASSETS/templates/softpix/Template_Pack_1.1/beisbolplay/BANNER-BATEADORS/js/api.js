@@ -1,6 +1,4 @@
 
-
-
 const logos_equipos = document.getElementById("logos_equipos");
 const fondo_equipos = document.getElementById("fondo_equipos");
 const priner_turno = document.getElementById("priner_turno");
@@ -102,7 +100,7 @@ function runTemplateUpdate() {
                 if(document.getElementById('fxg')){
                    document.getElementById('fxg').innerHTML = ` 
               <div>
-              ${element.AVE == null?0:element.AVE} <span> AVE </span> / </div>
+              ${element.AVE == null?'0':element.AVE} <span> AVE </span> / </div>
  
                <div> ${element.HR== null?'0':element.HR} <span > HR </span>  / </div>
  
