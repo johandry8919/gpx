@@ -22,11 +22,11 @@ body{
     width: 84px;
     height: 37px;
     position: absolute;
-    top: 2px;
+    top: 8px;
     left: 0;
     background-image: url("../img/final.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     opacity: 0;
   
    

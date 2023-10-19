@@ -103,6 +103,9 @@ function runTemplateUpdate() {
                         } = result1.data.juego;
 
 
+                       
+
+
             
                         let homeclub_lanzadores = result1.data.boxscore.homeclub.lanzadores;
                         let homeclub_peloteros =result1.data.boxscore.homeclub.peloteros;
@@ -195,7 +198,7 @@ function runTemplateUpdate() {
     
                     let colorDebase = "rgb(255, 255, 255)";
                     if (hombre_primera === 1 ){
-                           Hombre_primera.style.backgroundColor = colorDebase;vvvv
+                           Hombre_primera.style.backgroundColor = colorDebase;
     
                     }
                      
@@ -219,14 +222,18 @@ function runTemplateUpdate() {
                      
                      inning ? inning : inning = "0";
                      Inning.innerText = inning;
-                     parte == 0 ? triangle.classList.add("down") : triangle.classList.add("up");
+                     parte == 1 ? triangle.classList.add("down") : triangle.classList.add("up");
     
                    
-    
-                     if(outs === 1) {outs2.classList.add("activate")}
-                       else if(outs === 2){
-                        outs1.classList.add("activate");outs2.classList.add("activate")
-                       }
+                     if (outs === 1) {
+                        outs2.classList.add("activate");
+                      } else if (outs === 2) {
+                        outs1.classList.add("activate");
+                        outs2.classList.add("activate");
+                      } else {
+                        outs1.classList.remove("activate");
+                        outs2.classList.remove("activate");
+                      }
 
                         if (!animationExecuted) {
                             runAnimationIN();

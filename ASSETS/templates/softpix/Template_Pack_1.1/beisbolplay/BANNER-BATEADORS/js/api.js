@@ -1,4 +1,6 @@
 
+
+
 const logos_equipos = document.getElementById("logos_equipos");
 const fondo_equipos = document.getElementById("fondo_equipos");
 const priner_turno = document.getElementById("priner_turno");
@@ -81,8 +83,7 @@ function runTemplateUpdate() {
 
         if(Parte == 1){
           id_jugador = result1.data.juego.id_bateador_homeclub
-          
-  
+    
           logos_equipos.src = Logos_equipos[id_equipo_homeclub].img_url;
           fondo_equipos.src = Fondo_equipos[id_equipo_homeclub].img_url;
           data_pelotero = result1.data.boxscore.homeclub.peloteros
@@ -116,8 +117,6 @@ function runTemplateUpdate() {
                 const inicial_P= element.apellido.charAt(0);
 
               Nombre.innerText = `${element.nombre} ${element.apellido}     ${inicial_N}${inicial_P}`;
-
-
           
             }
         });
@@ -125,8 +124,8 @@ function runTemplateUpdate() {
 
         }else{
           id_jugador = result1.data.juego.id_bateador_visitante
-          logos_equipos.src = Logos_equipos[id_equipo_viasitnte].img_url;
-          fondo_equipos.src = Fondo_equipos[id_equipo_viasitnte].img_url;
+          logos_equipos.src = Logos_equipos[id_equipo_visitante].img_url;
+          fondo_equipos.src = Fondo_equipos[id_equipo_visitante].img_url;
           data_pelotero = result1.data.boxscore.visitante.peloteros
 
           data_pelotero.forEach(element => {

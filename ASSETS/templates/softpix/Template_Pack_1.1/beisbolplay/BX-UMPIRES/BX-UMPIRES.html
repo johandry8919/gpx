@@ -46,6 +46,34 @@ window.SPXGCTemplateDefinition = {
             "title" : "BX-UMPIRES",
             "value" : "BX-UMPIRES"
         },
+        {
+          field: "f0",
+          ftype: "textfield",
+          title: "principal",
+          value: "",
+        },
+
+        {
+          field: "f1",
+          ftype: "textfield",
+          title: "primera",
+          value: "",
+        },
+
+        {
+          field: "f2",
+          ftype: "textfield",
+          title: "segunda",
+          value: "",
+        },
+
+        {
+          field: "f3",
+          ftype: "textfield",
+          title: "tercera",
+          value: "",
+        },
+
     ]
 };
 
@@ -66,23 +94,26 @@ window.SPXGCTemplateDefinition = {
         <div class="cont"> 
         <div class="info principal">
             <p id="principal_left">principal:</p>
-            <p id="principal_right">no definido</p>
+            <p id="principal_right"></p>
         </div>
         <div class="info primera">
             <p id="primera_left">primera:</p>
-            <p id="primera_right">no definido</p>
+            <p id="primera_right"></p>
         </div>
         <div class="info segunda">
             <p id="segunda_left">segunda:</p>
-            <p id="segunda_right">no definido</p>
+            <p id="segunda_right"></p>
         </div>
         <div class="info tercera">
             <p id="tercera_left">tercera:</p>
-            <p id="tercera_right">no definido</p>
+            <p id="tercera_right"></p>
         </div>
         </div>
     </div>
-    
+    <div style="opacity: 0" id="f0"></div>
+    <div style="opacity: 0" id="f1"></div>
+    <div style="opacity: 0" id="f2"></div>
+    <div style="opacity: 0" id="f3"></div>
 </div >
 <script src="../_js/jquery-3.0.0.min.js"></script>
 <script src="js/animaciones.js"></script>
